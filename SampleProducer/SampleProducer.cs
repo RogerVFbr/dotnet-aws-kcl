@@ -78,7 +78,7 @@ namespace Amazon.Kinesis.ClientLibrary.SampleProducer
 
             Console.Error.WriteLine("Putting records in stream : " + myStreamName);
             // Write 10 UTF-8 encoded records to the stream.
-            for (int j = 0; j < 10; ++j)
+            for (int j = 0; j < 1; ++j)
             {
                 PutRecordRequest requestRecord = new PutRecordRequest();
                 requestRecord.StreamName = myStreamName;

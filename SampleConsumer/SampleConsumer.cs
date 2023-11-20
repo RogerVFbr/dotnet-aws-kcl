@@ -83,6 +83,8 @@ namespace Amazon.Kinesis.ClientLibrary.SampleConsumer
                         // As per the accompanying AmazonKinesisSampleProducer.cs, the payload
                         // is interpreted as UTF-8 characters.
                         data = System.Text.Encoding.UTF8.GetString(rec.Data);
+                        Console.WriteLine("IMIN");
+                        Console.WriteLine(data);
 
                         // Uncomment the following if you wish to see the retrieved record data.
                         //Console.Error.WriteLine(

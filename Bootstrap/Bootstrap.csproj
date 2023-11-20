@@ -10,4 +10,10 @@
     <PackageReference Include="CommandLineParser" Version="2.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp6.0\kcl.properties">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
