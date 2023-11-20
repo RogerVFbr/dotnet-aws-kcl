@@ -132,7 +132,7 @@ namespace Bootstrap
         private static List<MavenPackage> ParseMavenPackages()
         {
             string xmlns = "{http://maven.apache.org/POM/4.0.0}";
-            XElement mavenRoot = XElement.Load("../pom.xml");
+            XElement mavenRoot = XElement.Load("pom.xml");
 
             Dictionary<string, string> commonVersions = new Dictionary<string, string>();
             foreach (XElement el in mavenRoot.Descendants(xmlns + "properties").Elements())
