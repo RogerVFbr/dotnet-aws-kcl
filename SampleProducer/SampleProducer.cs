@@ -7,6 +7,8 @@ using System;
 using System.IO;
 using System.Text;
 using System.Threading;
+using Amazon;
+using Amazon.Kinesis;
 using Amazon.Kinesis.Model;
 
 /// <summary>
@@ -24,7 +26,7 @@ using Amazon.Kinesis.Model;
 /// </para>
 /// </summary>
 
-namespace Amazon.Kinesis.ClientLibrary.SampleProducer
+namespace SampleProducer
 {
     /// <summary>
     /// A sample producer of Kinesis records.
@@ -80,14 +82,15 @@ namespace Amazon.Kinesis.ClientLibrary.SampleProducer
             // Write 10 UTF-8 encoded records to the stream.
             for (int j = 0; j < 1; ++j)
             {
+                var payload = "testData " + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss.fff");
                 PutRecordRequest requestRecord = new PutRecordRequest();
                 requestRecord.StreamName = myStreamName;
-                requestRecord.Data = new MemoryStream(Encoding.UTF8.GetBytes("testData-" + j));
+                requestRecord.Data = new MemoryStream(Encoding.UTF8.GetBytes(payload));
                 requestRecord.PartitionKey = "partitionKey-" + j;
                 var putResultResponse = kinesisClient.PutRecordAsync(requestRecord).Result;
                 Console.Error.WriteLine(
-                    String.Format("Successfully putrecord {0}:\n\t partition key = {1,15}, shard ID = {2}",
-                        j, requestRecord.PartitionKey, putResultResponse.ShardId));
+                    String.Format("Successfully putrecord {0}:\n\t partition key = {1,15}, shard ID = {2}, content = {3}",
+                        j, requestRecord.PartitionKey, putResultResponse.ShardId, payload));
             }
 
             // Uncomment the following if you wish to delete the stream here.

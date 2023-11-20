@@ -3,7 +3,9 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-namespace Amazon.Kinesis.ClientLibrary
+using ClientLibrary.inputs;
+
+namespace ClientLibrary
 {
     /// <summary>
     /// Receives and processes Kinesis records. Each IRecordProcessor instance processes data from 1 and only 1 shard.

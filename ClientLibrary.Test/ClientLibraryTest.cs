@@ -4,13 +4,16 @@
  */
 
 using System;
-using System.IO;
-using NUnit.Framework;
-using NSubstitute;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using ClientLibrary.inputs;
+using ClientLibrary.messages;
+using NSubstitute;
+using NUnit.Framework;
+using Action = ClientLibrary.messages.Action;
 
-namespace Amazon.Kinesis.ClientLibrary
+namespace ClientLibrary.Test
 {
     [TestFixture]
     internal class KclTest

@@ -3,7 +3,9 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-namespace Amazon.Kinesis.ClientLibrary
+using ClientLibrary.inputs;
+
+namespace ClientLibrary
 {
     public interface IShardRecordProcessor
     {

@@ -5,8 +5,9 @@
 
 using System;
 using System.Runtime.Serialization;
+using ClientLibrary.inputs;
 
-namespace Amazon.Kinesis.ClientLibrary
+namespace ClientLibrary.messages
 {
     [DataContract]
     internal class CheckpointAction : Action

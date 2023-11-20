@@ -2,9 +2,10 @@
 // Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 //
+
 using System.Collections.Generic;
 
-namespace Amazon.Kinesis.ClientLibrary
+namespace ClientLibrary.inputs
 {
     /// <summary>
     /// Contains a batch of records to be processed, along with contextual information.

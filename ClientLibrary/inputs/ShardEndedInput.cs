@@ -2,7 +2,7 @@
 // Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 //
-namespace Amazon.Kinesis.ClientLibrary
+namespace ClientLibrary.inputs
 {
     /// <summary>
     ///     Indicates that the record processor has reached the end of the shard and now needs to checkpoint to complete the

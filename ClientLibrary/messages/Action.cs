@@ -2,15 +2,16 @@
 // Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 //
+
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
+using ClientLibrary.inputs;
 
-namespace Amazon.Kinesis.ClientLibrary
+namespace ClientLibrary.messages
 {
     [DataContract]
     internal class Action

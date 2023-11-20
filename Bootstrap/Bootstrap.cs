@@ -4,15 +4,15 @@
 //
 
 using System;
-using System.IO;
-using System.Net;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Xml.Linq;
 using CommandLine;
 
-namespace Amazon.Kinesis.ClientLibrary.Bootstrap
+namespace Bootstrap
 {
     /// <summary>
     /// Represents a Maven java package. We need to download a bunch of these in order

@@ -2,7 +2,7 @@
 // Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 //
-namespace Amazon.Kinesis.ClientLibrary
+namespace ClientLibrary.inputs
 {
     /// <summary>
     /// Contextual information that can used to perform specialized initialization for this IRecordProcessor.

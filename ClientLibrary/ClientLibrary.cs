@@ -4,13 +4,16 @@
 //
 
 using System;
-using System.Runtime.Serialization;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
+using ClientLibrary.inputs;
+using ClientLibrary.messages;
+using Action = ClientLibrary.messages.Action;
 
-namespace Amazon.Kinesis.ClientLibrary
+namespace ClientLibrary
 {
     #region Public
 
