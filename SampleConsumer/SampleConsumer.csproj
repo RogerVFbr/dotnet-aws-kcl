@@ -23,9 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="kcl.properties">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
